@@ -27,7 +27,7 @@ them responsible for all technical details.
 Dependencies should flow from use-case modules toward stable contracts and
 cross-cutting utilities.
 
-- Service modules may depend on required `data.*`, `map.*`, `com.app.config`,
+- Service modules may depend on required `data.*`, `map.*`, `com.utils`,
   and `com.infra` modules.
 - Mapping modules may depend on source and target data modules plus shared
   mapping utilities.

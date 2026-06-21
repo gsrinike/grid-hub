@@ -9,9 +9,8 @@ each module family.
 
 Examples:
 
-- `com.env`: environment resolution
-- `com.utils`: shared utilities and cache abstractions
-- `com.app.config`: module configuration loading
+- `com.utils`: shared utilities, cache abstractions, environment resolution, and
+  configuration loading
 - `com.infra`: infrastructure adapters
 - `com.auth`: authentication and authorization services
 - `com.mapping`: generic object mapping support
@@ -55,7 +54,7 @@ apply validation, call infrastructure adapters, and publish domain events.
 Rules:
 
 - Use Java package names that reflect the service domain and capability.
-- Depend only on required `data.*`, `map.*`, `com.app.config`, and `com.infra`
+- Depend only on required `data.*`, `map.*`, `com.utils`, and `com.infra`
   modules.
 - Use Spring Boot only in runnable service modules.
 - Use standard logging and OpenTelemetry where runtime telemetry is emitted.
